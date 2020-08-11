@@ -55,7 +55,10 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C4B-R8-bXf">
-                                <rect key="frame" x="60" y="696" width="294" height="34"/>
+                                <rect key="frame" x="132" y="696" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AIO-J6-AQz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -71,11 +74,10 @@
                             <constraint firstItem="y9V-5r-vnM" firstAttribute="top" secondItem="a1g-Dy-NAS" secondAttribute="bottom" constant="46" id="S6l-Q4-y8s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YQD-Wf-w1T" secondAttribute="bottom" constant="46" id="Ufr-bo-eWx"/>
                             <constraint firstItem="YQD-Wf-w1T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOK-cK-B9g"/>
-                            <constraint firstItem="C4B-R8-bXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="bvI-nW-4Qz"/>
                             <constraint firstItem="y9V-5r-vnM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhZ-cL-xW4"/>
                             <constraint firstItem="ppr-eL-AQN" firstAttribute="height" secondItem="DMZ-4B-hrx" secondAttribute="height" id="mFZ-ag-KK7"/>
                             <constraint firstItem="a1g-Dy-NAS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="q5Z-zD-DbW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4B-R8-bXf" secondAttribute="trailing" constant="60" id="sXt-th-jgf"/>
+                            <constraint firstItem="C4B-R8-bXf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQE-Dv-ha9"/>
                             <constraint firstItem="ppr-eL-AQN" firstAttribute="leading" secondItem="a1g-Dy-NAS" secondAttribute="trailing" constant="27" id="zCX-oi-cGI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -84,9 +86,11 @@
                     <connections>
                         <outlet property="backButton" destination="DMZ-4B-hrx" id="ogu-sQ-jld"/>
                         <outlet property="myButton" destination="YQD-Wf-w1T" id="JDe-M2-lGE"/>
+                        <outlet property="myButtonConstraint" destination="VOK-cK-B9g" id="Bya-b2-vDl"/>
                         <outlet property="myImageView" destination="a1g-Dy-NAS" id="Wwv-Ln-LlJ"/>
                         <outlet property="myLabel" destination="y9V-5r-vnM" id="hHc-KM-Pj5"/>
                         <outlet property="myTextField" destination="C4B-R8-bXf" id="aTh-Hj-wgW"/>
+                        <outlet property="myTextFieldConstraint" destination="xQE-Dv-ha9" id="y2e-8z-mLY"/>
                         <outlet property="nextButton" destination="ppr-eL-AQN" id="Rac-2d-OHA"/>
                     </connections>
                 </viewController>
