@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XY1-pg-Evf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authorization View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AuthorizationViewController" customModule="a" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9V-5r-vnM">
+                                <rect key="frame" x="180" y="434" width="54" height="28"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQD-Wf-w1T">
+                                <rect key="frame" x="185.5" y="782" width="43" height="34"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <state key="normal" title="LogIn"/>
+                                <connections>
+                                    <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPq-v0-jcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMZ-4B-hrx">
+                                <rect key="frame" x="20" y="248" width="60" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KZh-KV-mMl"/>
+                                    <constraint firstAttribute="width" constant="60" id="kV9-mR-vpW"/>
+                                </constraints>
+                                <state key="normal" image="prev"/>
+                                <connections>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j69-18-jOt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppr-eL-AQN">
+                                <rect key="frame" x="334" y="248" width="60" height="80"/>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sIy-nV-dji"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-Dy-NAS">
+                                <rect key="frame" x="107" y="188" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4MU-pg-Q7g"/>
+                                    <constraint firstAttribute="width" constant="200" id="9Mz-IP-qNL"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C4B-R8-bXf">
+                                <rect key="frame" x="60" y="696" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.67984234779999997" blue="0.59653828649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ppr-eL-AQN" firstAttribute="width" secondItem="DMZ-4B-hrx" secondAttribute="width" id="166-TO-UHt"/>
+                            <constraint firstItem="ppr-eL-AQN" firstAttribute="centerY" secondItem="DMZ-4B-hrx" secondAttribute="centerY" id="28x-2g-EcL"/>
+                            <constraint firstItem="YQD-Wf-w1T" firstAttribute="top" secondItem="C4B-R8-bXf" secondAttribute="bottom" constant="52" id="66t-cR-u4u"/>
+                            <constraint firstItem="a1g-Dy-NAS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BNd-8N-e2w"/>
+                            <constraint firstItem="DMZ-4B-hrx" firstAttribute="centerY" secondItem="a1g-Dy-NAS" secondAttribute="centerY" id="D3l-gd-0sc"/>
+                            <constraint firstItem="a1g-Dy-NAS" firstAttribute="leading" secondItem="DMZ-4B-hrx" secondAttribute="trailing" constant="27" id="OK3-rA-edE"/>
+                            <constraint firstItem="y9V-5r-vnM" firstAttribute="top" secondItem="a1g-Dy-NAS" secondAttribute="bottom" constant="46" id="S6l-Q4-y8s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YQD-Wf-w1T" secondAttribute="bottom" constant="46" id="Ufr-bo-eWx"/>
+                            <constraint firstItem="YQD-Wf-w1T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOK-cK-B9g"/>
+                            <constraint firstItem="C4B-R8-bXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="bvI-nW-4Qz"/>
+                            <constraint firstItem="y9V-5r-vnM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhZ-cL-xW4"/>
+                            <constraint firstItem="ppr-eL-AQN" firstAttribute="height" secondItem="DMZ-4B-hrx" secondAttribute="height" id="mFZ-ag-KK7"/>
+                            <constraint firstItem="a1g-Dy-NAS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="q5Z-zD-DbW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4B-R8-bXf" secondAttribute="trailing" constant="60" id="sXt-th-jgf"/>
+                            <constraint firstItem="ppr-eL-AQN" firstAttribute="leading" secondItem="a1g-Dy-NAS" secondAttribute="trailing" constant="27" id="zCX-oi-cGI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d9p-0G-fST"/>
+                    <connections>
+                        <outlet property="backButton" destination="DMZ-4B-hrx" id="ogu-sQ-jld"/>
+                        <outlet property="myButton" destination="YQD-Wf-w1T" id="JDe-M2-lGE"/>
+                        <outlet property="myImageView" destination="a1g-Dy-NAS" id="Wwv-Ln-LlJ"/>
+                        <outlet property="myLabel" destination="y9V-5r-vnM" id="hHc-KM-Pj5"/>
+                        <outlet property="myTextField" destination="C4B-R8-bXf" id="aTh-Hj-wgW"/>
+                        <outlet property="nextButton" destination="ppr-eL-AQN" id="Rac-2d-OHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="106.47321428571428"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tZS-RB-Wqn">
+            <objects>
+                <viewController storyboardIdentifier="main" id="DLw-3l-b3X" customClass="MainViewController" customModule="a" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yuN-M5-Ww7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfQ-Dv-JIN">
+                                <rect key="frame" x="180" y="590" width="54" height="28"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DDq-MX-XeA">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="L01-jx-q0X"/>
+                                    <constraint firstAttribute="width" constant="200" id="QwB-sH-BuF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.67984234779999997" blue="0.59653828649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RfQ-Dv-JIN" firstAttribute="centerX" secondItem="yuN-M5-Ww7" secondAttribute="centerX" id="M4I-uQ-eRZ"/>
+                            <constraint firstItem="RfQ-Dv-JIN" firstAttribute="top" secondItem="DDq-MX-XeA" secondAttribute="bottom" constant="42" id="Pv5-dk-4Xl"/>
+                            <constraint firstItem="DDq-MX-XeA" firstAttribute="centerX" secondItem="yuN-M5-Ww7" secondAttribute="centerX" id="VBd-pW-Der"/>
+                            <constraint firstItem="DDq-MX-XeA" firstAttribute="centerY" secondItem="yuN-M5-Ww7" secondAttribute="centerY" id="Zth-pM-lbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nje-pi-PDN"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="DDq-MX-XeA" id="FeD-0C-jXM"/>
+                        <outlet property="label" destination="RfQ-Dv-JIN" id="bRV-DM-7Jo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDw-yO-yxV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="106"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f8X-7Y-ZfZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XY1-pg-Evf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qEf-V4-Lae">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WJR-yg-jFA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChC-Ds-niI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="next" width="128" height="128"/>
+        <image name="prev" width="128" height="128"/>
+    </resources>
+</document>
